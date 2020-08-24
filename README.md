@@ -21,19 +21,19 @@ It will generate features.csv file, containing features.
 This file is then used to train SVM classifier which gets saved as svmClassifier.pkl
 
 To skip generation of features.csv and avoid training of SVM classifier, i.e only test images, do:
-'''
+```shell
 python3 main.py --useDumpedFeature --useSavedModel
-'''
+```
 
 To pass your own custom test data use:
-'''
+```shell
 python main.py --useDumpedFeeature --useSavedModel -testData [Path to test data] 
-'''
+```
 
 To train on a custom dataset, pass:
-'''
+```shell
 python main.py -data [Path to training data]
-'''
+```
 
 ## License
  
