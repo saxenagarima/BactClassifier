@@ -13,8 +13,25 @@ These extracted features were used to train an SVM model.
 
 ## Usage
 
-python3 main.py 
+Build Docker:
+```shell
+docker build -t bact .
+```
 
+Start Docker:
+```shell
+docker run -it -p 8000:8000 bact
+```
+
+Run Jupyter notebook:
+```shell
+jupyter notebook --ip 0.0.0.0 --port 8000 --no-browser --allow-root
+```
+
+Run Script"
+```shell
+python3 main.py 
+```
 Uses the default data folder for training and default test data folder for testing.
 
 It will generate features.csv file, containing features.
